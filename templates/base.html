@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <header>
+       <a href="{% url 'home' %}">Catalog</a>
+       <a href="{% url 'film_new' %}">Add film</a>
+       {% block content%}
+       {% endblock content%}
+
+   </header>
+</body>
+</html>

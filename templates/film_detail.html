@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %} Film Detail {% endblock title %}
+
+{% block content %}
+     <div>
+       <h2>{{ object.title }}</h2>
+         <p>{{ object.year }}</p>
+         <p>{{ object.country }}</p>
+         <p>{{ object.genre }}</p>
+         <p>{{ object.rating }}</p>
+     </div>
+    <a href="{% url 'film_edit' film.pk %}">Edit Film</a>
+    <a href="{% url 'film_delete' film.pk %}">Delete Film</a>
+{% endblock content %}
